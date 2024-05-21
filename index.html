@@ -16,6 +16,7 @@
                     <li><a style="color: rgb(84, 159, 213);" href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact Us</a></li>
+                    <a href="#" id="buston" onclick="ToggleBtn()">Dark</a>
                 </ul>
                 <div class="dir">
                     <button id="toggleButton">Menyu</button>
@@ -262,6 +263,18 @@
                     navbar.style.display = 'block';
                 }
             });
+
+               function ToggleBtn() {
+                let body = document.body;
+                let butt = document.getElementById("buston")
+                body.classList.toggle("dark-mode")
+                if (butt.textContent == "Dark") {
+                    butt.textContent = "Lihgt"
+                }
+                else{
+                    butt.textContent = "Dark"
+                }
+            }
         </script>
     </body>
 
